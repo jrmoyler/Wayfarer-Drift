@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#0a0c10" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="WAYFARER // RIFT — a hand-painted top-down arena brawler. Relight the beacons, outplay the Echoes, beat today's Daily Rift and share your run." />
+    <meta property="og:title" content="WAYFARER // RIFT" />
+    <meta property="og:description" content="Relight the beacons. Close the Rift. Beat today's Daily Rift — then dare your friends." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wayfarer-drift.vercel.app/" />
+    <meta property="og:image" content="https://wayfarer-drift.vercel.app/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>WAYFARER // RIFT</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game" aria-label="Arena" role="img"></canvas>
+
+      <!-- Boot -->
+      <section id="boot" class="screen active" aria-label="Loading">
+        <div class="boot-inner">
+          <div class="compass" aria-hidden="true"><i></i></div>
+          <div class="boot-logo">WAYFARER <span>// RIFT</span></div>
+          <div class="boot-bar"><i id="boot-fill"></i></div>
+          <p id="boot-text">Charting routes…</p>
+        </div>
+      </section>
+
+      <!-- Title -->
+      <section id="title" class="screen" aria-label="Title">
+        <div class="title-art" aria-hidden="true"></div>
+        <div class="title-glow" aria-hidden="true"></div>
+        <div class="title-content">
+          <h1 class="logo"><span class="logo-main">WAYFARER</span><span class="logo-sub">// RIFT //</span></h1>
+          <nav class="menu" aria-label="Main menu">
+            <button class="btn primary" data-action="continue" hidden>Continue Campaign</button>
+            <button class="btn primary" data-action="new">New Campaign</button>
+            <button class="btn daily-btn" data-action="daily">
+              <span class="daily-label">Daily Rift <b id="daily-num"></b></span>
+              <small id="daily-teaser"></small>
+            </button>
+            <button class="btn" data-action="trials">Arena Trials</button>
+            <div class="menu-row">
+              <button class="btn small" data-action="upgrades">Upgrades</button>
+              <button class="btn small" data-action="journal">Journal</button>
+              <button class="btn small" data-action="settings">Settings</button>
+            </div>
+          </nav>
+        </div>
+        <footer class="title-foot">
+          <button class="link" data-action="credits">Credits</button>
+          <button class="link" id="install-btn" hidden>Install</button>
+          <span class="coins-chip"><img src="./assets/ui/route_coin.webp" alt="" /><b class="coin-count">0</b></span>
+        </footer>
+      </section>
+
+      <!-- Traveler select -->
+      <section id="select" class="screen" aria-label="Choose your traveler">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Choose your Wayfarer</h2>
+        </header>
+        <div class="roster" role="radiogroup" aria-label="Travelers"></div>
+        <div class="select-foot">
+          <button class="btn primary" id="select-go">Set Out</button>
+        </div>
+      </section>
+
+      <!-- Route map -->
+      <section id="map" class="screen" aria-label="Route map">
+        <header class="screen-head">
+          <button class="back" data-action="title" aria-label="Title">‹</button>
+          <h2>The Route</h2>
+          <span class="coins-chip"><img src="./assets/ui/route_coin.webp" alt="" /><b class="coin-count">0</b></span>
+        </header>
+        <div class="route"></div>
+        <div class="select-foot">
+          <button class="btn small" data-action="upgrades">Upgrades</button>
+          <button class="btn primary" id="map-go">Enter Region</button>
+        </div>
+      </section>
+
+      <!-- Daily -->
+      <section id="daily" class="screen" aria-label="Daily Rift">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Daily Rift <span id="daily-head-num"></span></h2>
+        </header>
+        <div class="daily-body">
+          <div class="daily-hero">
+            <canvas class="preview big" id="daily-preview" width="260" height="260"></canvas>
+            <div>
+              <p class="eyebrow" id="daily-date"></p>
+              <h3 id="daily-traveler"></h3>
+              <p id="daily-region"></p>
+              <ul class="mods" id="daily-mods"></ul>
+            </div>
+          </div>
+          <p class="fineprint">Same Echoes, same seed, same rules for everyone today. Endless waves — a Gatewarden every sixth. Your first run is your official score.</p>
+          <div class="daily-records" id="daily-records"></div>
+        </div>
+        <div class="select-foot">
+          <button class="btn small" id="daily-share" hidden>Share Result</button>
+          <button class="btn primary" id="daily-go">Enter the Rift</button>
+        </div>
+      </section>
+
+      <!-- Trials -->
+      <section id="trials" class="screen" aria-label="Arena trials">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Arena Trials</h2>
+        </header>
+        <p class="screen-sub">Endless waves. Chase your best, then send the seed to a friend.</p>
+        <div class="trial-regions" role="radiogroup" aria-label="Arena"></div>
+        <div class="trial-travelers" role="radiogroup" aria-label="Traveler"></div>
+        <div class="select-foot">
+          <button class="btn primary" id="trial-go">Begin Trial</button>
+        </div>
+      </section>
+
+      <!-- Upgrades -->
+      <section id="upgrades" class="screen" aria-label="Upgrades">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Outfitter</h2>
+          <span class="coins-chip"><img src="./assets/ui/route_coin.webp" alt="" /><b class="coin-count">0</b></span>
+        </header>
+        <p class="screen-sub">Route coins buy permanent gear, shared by every traveler.</p>
+        <div class="upgrade-list"></div>
+      </section>
+
+      <!-- Journal -->
+      <section id="journal" class="screen" aria-label="Field journal">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Field Journal</h2>
+        </header>
+        <div class="tabs" role="tablist">
+          <button role="tab" class="tab active" data-tab="travelers">Travelers</button>
+          <button role="tab" class="tab" data-tab="echoes">Echoes</button>
+          <button role="tab" class="tab" data-tab="props">Field Props</button>
+          <button role="tab" class="tab" data-tab="ui">Kit</button>
+          <button role="tab" class="tab" data-tab="stats">Records</button>
+        </div>
+        <div class="journal-body" role="tabpanel"></div>
+      </section>
+
+      <!-- Settings -->
+      <section id="settings" class="screen" aria-label="Settings">
+        <header class="screen-head">
+          <button class="back" data-action="back" aria-label="Back">‹</button>
+          <h2>Settings</h2>
+        </header>
+        <form class="settings-form" onsubmit="return false">
+          <label>Master volume <input type="range" min="0" max="1" step="0.05" name="master" /></label>
+          <label>Music <input type="range" min="0" max="1" step="0.05" name="music" /></label>
+          <label>Effects <input type="range" min="0" max="1" step="0.05" name="sfx" /></label>
+          <label>Screen shake <input type="range" min="0" max="1" step="0.1" name="shake" /></label>
+          <label class="toggle"><input type="checkbox" name="muted" /> <span>Mute all audio</span></label>
+          <label class="toggle"><input type="checkbox" name="reducedMotion" /> <span>Reduced motion</span></label>
+          <label class="toggle"><input type="checkbox" name="damageNumbers" /> <span>Damage numbers</span></label>
+          <label class="toggle"><input type="checkbox" name="assist" /> <span>Assist mode <small>(half damage taken, longer tells)</small></span></label>
+          <label class="toggle"><input type="checkbox" name="haptics" /> <span>Vibration on touch devices</span></label>
+        </form>
+        <div class="controls-ref">
+          <h3>Controls</h3>
+          <dl>
+            <dt>Move</dt><dd>WASD / Arrows · Left stick · Touch stick</dd>
+            <dt>Strike</dt><dd>J / Z / Click · A / X</dd>
+            <dt>Dodge</dt><dd>Space / Shift · B / LB / Triggers</dd>
+            <dt>Special</dt><dd>K / C · Y / RB</dd>
+            <dt>Pause</dt><dd>Esc / P · Start</dd>
+          </dl>
+          <p class="fineprint">Tap Strike up to three times for a combo. Dodge through an attack at the last moment for a <b>Perfect Dodge</b>: slow-motion, stamina, and special charge.</p>
+        </div>
+      </section>
+
+      <!-- Credits -->
+      <section id="credits" class="screen" aria-label="Credits">
+        <div class="credits-roll">
+          <h2>WAYFARER // RIFT</h2>
+          <h3>Concept &amp; Creative Direction</h3><p>John-Ross Moyler (Hataalii) · Collective AI Inc.</p>
+          <h3>Art</h3><p>Wayfarer // Rift asset collection (generated, user-supplied)</p>
+          <h3>Engineering, Game Design, Narrative, Cinematics &amp; Procedural Audio</h3><p>Claude Code</p>
+          <h3>Starring</h3><p>Sable, the Courier · Rook, the Cartographer · Iona, the Tidekeeper</p><p>and the Gatewarden</p>
+          <h3>Built With</h3><p>TypeScript · Vite · Web Audio · Canvas 2D · Cinzel (SIL OFL)</p>
+          <h3>Thank You For Playing</h3><p>The routes are yours now.</p>
+        </div>
+        <button class="btn credits-back" data-action="title">Return to Title</button>
+      </section>
+
+      <!-- HUD -->
+      <section id="hud" class="layer" aria-hidden="true">
+        <div class="hud-tl">
+          <canvas class="portrait" width="72" height="72"></canvas>
+          <div class="bars">
+            <div class="bar hp"><i class="lag"></i><i class="fill"></i><span class="val"></span></div>
+            <div class="bar st"><i class="fill"></i></div>
+          </div>
+        </div>
+        <div class="hud-tc">
+          <div class="wave-label"></div>
+          <div class="target-label" hidden></div>
+          <div class="boss" hidden>
+            <div class="boss-name">The Gatewarden</div>
+            <div class="bar boss-bar"><i class="lag"></i><i class="fill"></i><b class="tick t1"></b><b class="tick t2"></b></div>
+          </div>
+        </div>
+        <div class="hud-tr">
+          <div class="score">0</div>
+          <span class="coins-chip"><img src="./assets/ui/route_coin.webp" alt="" /><b class="run-coins">0</b></span>
+          <button class="pause-btn" aria-label="Pause">❚❚</button>
+        </div>
+        <div class="style">
+          <div class="style-rank">D</div>
+          <div class="style-name"></div>
+          <div class="style-combo"></div>
+          <div class="style-bar"><i></i></div>
+        </div>
+        <div class="hud-actions">
+          <div class="act" data-act="attack"><img src="./assets/ui/attack.webp" alt="" /><kbd>J</kbd></div>
+          <div class="act" data-act="dash"><img src="./assets/ui/dash.webp" alt="" /><kbd>Space</kbd></div>
+          <div class="act special" data-act="special"><img src="./assets/ui/special.webp" alt="" /><i class="cd"></i><kbd>K</kbd></div>
+        </div>
+      </section>
+
+      <!-- Touch -->
+      <section id="touch" class="layer" aria-hidden="true">
+        <div id="stick-zone"></div>
+        <div id="stick"><img src="./assets/ui/joystick.webp" alt="" class="stick-base" /><i id="stick-knob"></i></div>
+        <button id="btn-attack" class="tbtn" aria-label="Strike"><img src="./assets/ui/attack.webp" alt="" /></button>
+        <button id="btn-dodge" class="tbtn" aria-label="Dodge"><img src="./assets/ui/dash.webp" alt="" /></button>
+        <button id="btn-special" class="tbtn" aria-label="Special"><img src="./assets/ui/special.webp" alt="" /><i class="cd"></i></button>
+      </section>
+
+      <div id="banner" aria-hidden="true"><div class="b-k"></div><div class="b-t"></div><div class="b-s"></div></div>
+
+      <!-- Pause -->
+      <section id="pause" class="screen modal" aria-label="Paused">
+        <div class="panel">
+          <h2>Paused</h2>
+          <p class="pause-info"></p>
+          <button class="btn primary" data-action="resume">Resume</button>
+          <button class="btn" data-action="restart">Restart</button>
+          <button class="btn" data-action="settings">Settings</button>
+          <button class="btn" data-action="quit">Quit to Title</button>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section id="results" class="screen modal" aria-label="Results">
+        <div class="panel results-panel">
+          <p class="eyebrow r-kicker"></p>
+          <h2 class="r-title"></h2>
+          <div class="r-hero">
+            <div class="r-rank"></div>
+            <div class="r-score"><b>0</b><span>score</span></div>
+          </div>
+          <div class="r-strip" aria-label="Waves"></div>
+          <dl class="r-stats"></dl>
+          <p class="r-best" hidden>New personal best!</p>
+          <div class="r-buttons"></div>
+        </div>
+      </section>
+
+      <!-- Cutscene -->
+      <section id="cutscene" class="screen" aria-label="Cutscene">
+        <canvas id="cs-canvas"></canvas>
+        <div class="cs-card" aria-live="polite"><div class="k"></div><div class="t"></div><div class="s"></div></div>
+        <div class="cs-sub" aria-live="polite"><div class="cs-who"></div><div class="cs-sub-text"></div></div>
+        <button class="cs-skip" aria-label="Hold to skip">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle class="bg" cx="20" cy="20" r="18" /><circle class="fg" cx="20" cy="20" r="18" /></svg>
+          <span>Hold to skip</span>
+        </button>
+        <div class="cs-progress"><i></i></div>
+      </section>
+
+      <div id="toast" role="status" aria-live="polite"></div>
+      <div id="rotate-hint" aria-hidden="true">Rotate for the widest view ↻</div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
