@@ -1,0 +1,28 @@
+{
+  "name": "wayfarer-drift",
+  "private": true,
+  "version": "1.0.0",
+  "description": "WAYFARER // RIFT — a top-down 2.5D arena brawler.",
+  "type": "module",
+  "scripts": {
+    "assets": "python3 -I scripts/assets.py",
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc --noEmit && vite build && node scripts/sw.mjs",
+    "preview": "vite preview --port 4173",
+    "playtest": "node scripts/playtest.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.2.6"
+  }
+}

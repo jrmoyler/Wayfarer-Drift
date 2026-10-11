@@ -1,0 +1,15 @@
+{
+  "name": "WAYFARER // RIFT",
+  "short_name": "Wayfarer",
+  "description": "Relight the beacons. Close the Rift. A hand-painted arena brawler with a Daily Rift.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#0a0c10",
+  "theme_color": "#0a0c10",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

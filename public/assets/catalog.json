@@ -1,0 +1,742 @@
+{
+ "version": 2,
+ "characters": {
+  "sable": {
+   "image": "assets/sprites/sable.webp",
+   "rift": "assets/sprites/sable_rift.webp",
+   "frameW": 306,
+   "frameH": 173,
+   "pivotX": 153,
+   "pivotY": 154,
+   "standHeight": 112.0,
+   "anims": {
+    "idle": {
+     "row": 0,
+     "start": 0,
+     "count": 6,
+     "fps": 6,
+     "loop": true
+    },
+    "walk_s": {
+     "row": 1,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_e": {
+     "row": 2,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_n": {
+     "row": 3,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_w": {
+     "row": 4,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 5,
+     "start": 0,
+     "count": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "special": {
+     "row": 6,
+     "start": 0,
+     "count": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hurt": {
+     "row": 7,
+     "start": 0,
+     "count": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "defeat": {
+     "row": 7,
+     "start": 3,
+     "count": 3,
+     "fps": 6,
+     "loop": false
+    }
+   }
+  },
+  "rook": {
+   "image": "assets/sprites/rook.webp",
+   "rift": "assets/sprites/rook_rift.webp",
+   "frameW": 202,
+   "frameH": 223,
+   "pivotX": 101,
+   "pivotY": 190,
+   "standHeight": 111.6,
+   "anims": {
+    "idle": {
+     "row": 0,
+     "start": 0,
+     "count": 6,
+     "fps": 6,
+     "loop": true
+    },
+    "walk_s": {
+     "row": 1,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_e": {
+     "row": 2,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_n": {
+     "row": 3,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_w": {
+     "row": 4,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 5,
+     "start": 0,
+     "count": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "special": {
+     "row": 6,
+     "start": 0,
+     "count": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hurt": {
+     "row": 7,
+     "start": 0,
+     "count": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "defeat": {
+     "row": 7,
+     "start": 3,
+     "count": 3,
+     "fps": 6,
+     "loop": false
+    }
+   }
+  },
+  "iona": {
+   "image": "assets/sprites/iona.webp",
+   "rift": "assets/sprites/iona_rift.webp",
+   "frameW": 192,
+   "frameH": 165,
+   "pivotX": 96,
+   "pivotY": 141,
+   "standHeight": 108.0,
+   "anims": {
+    "idle": {
+     "row": 0,
+     "start": 0,
+     "count": 6,
+     "fps": 6,
+     "loop": true
+    },
+    "walk_s": {
+     "row": 1,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_e": {
+     "row": 2,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_n": {
+     "row": 3,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_w": {
+     "row": 4,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 5,
+     "start": 0,
+     "count": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "special": {
+     "row": 6,
+     "start": 0,
+     "count": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hurt": {
+     "row": 7,
+     "start": 0,
+     "count": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "defeat": {
+     "row": 7,
+     "start": 3,
+     "count": 3,
+     "fps": 6,
+     "loop": false
+    }
+   }
+  },
+  "warden": {
+   "image": "assets/sprites/warden.webp",
+   "rift": null,
+   "frameW": 304,
+   "frameH": 268,
+   "pivotX": 152,
+   "pivotY": 209,
+   "standHeight": 153.7,
+   "anims": {
+    "idle": {
+     "row": 0,
+     "start": 0,
+     "count": 6,
+     "fps": 6,
+     "loop": true
+    },
+    "walk_s": {
+     "row": 1,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_e": {
+     "row": 2,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_n": {
+     "row": 3,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "walk_w": {
+     "row": 4,
+     "start": 0,
+     "count": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 5,
+     "start": 0,
+     "count": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "special": {
+     "row": 6,
+     "start": 0,
+     "count": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hurt": {
+     "row": 7,
+     "start": 0,
+     "count": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "defeat": {
+     "row": 7,
+     "start": 3,
+     "count": 3,
+     "fps": 6,
+     "loop": false
+    }
+   }
+  }
+ },
+ "props": {
+  "image": "assets/sprites/props.webp",
+  "frames": {
+   "travel_chest": {
+    "w": 85,
+    "h": 82,
+    "pivotX": 42,
+    "pivotY": 72,
+    "radius": 29,
+    "x": 697,
+    "y": 179,
+    "src": "assets/props/travel_chest.webp"
+   },
+   "luggage": {
+    "w": 82,
+    "h": 85,
+    "pivotX": 41,
+    "pivotY": 76,
+    "radius": 28,
+    "x": 554,
+    "y": 179,
+    "src": "assets/props/luggage.webp"
+   },
+   "sandstone_barricade": {
+    "w": 165,
+    "h": 133,
+    "pivotX": 82,
+    "pivotY": 121,
+    "radius": 56,
+    "x": 488,
+    "y": 0,
+    "src": "assets/props/sandstone_barricade.webp"
+   },
+   "supply_crate": {
+    "w": 82,
+    "h": 80,
+    "pivotX": 41,
+    "pivotY": 71,
+    "radius": 28,
+    "x": 784,
+    "y": 179,
+    "src": "assets/props/supply_crate.webp"
+   },
+   "route_beacon": {
+    "w": 99,
+    "h": 132,
+    "pivotX": 50,
+    "pivotY": 122,
+    "radius": 34,
+    "x": 655,
+    "y": 0,
+    "src": "assets/props/route_beacon.webp"
+   },
+   "expedition_tent": {
+    "w": 194,
+    "h": 155,
+    "pivotX": 97,
+    "pivotY": 139,
+    "radius": 66,
+    "x": 195,
+    "y": 0,
+    "src": "assets/props/expedition_tent.webp"
+   },
+   "harbor_bollard": {
+    "w": 87,
+    "h": 89,
+    "pivotX": 44,
+    "pivotY": 80,
+    "radius": 30,
+    "x": 465,
+    "y": 179,
+    "src": "assets/props/harbor_bollard.webp"
+   },
+   "barrel": {
+    "w": 60,
+    "h": 80,
+    "pivotX": 30,
+    "pivotY": 74,
+    "radius": 20,
+    "x": 868,
+    "y": 179,
+    "src": "assets/props/barrel.webp"
+   },
+   "solar_charger": {
+    "w": 106,
+    "h": 104,
+    "pivotX": 53,
+    "pivotY": 93,
+    "radius": 36,
+    "x": 252,
+    "y": 179,
+    "src": "assets/props/solar_charger.webp"
+   },
+   "portal_arch": {
+    "w": 193,
+    "h": 177,
+    "pivotX": 96,
+    "pivotY": 169,
+    "radius": 66,
+    "x": 0,
+    "y": 0,
+    "src": "assets/props/portal_arch.webp"
+   },
+   "coliving_bench": {
+    "w": 134,
+    "h": 107,
+    "pivotX": 67,
+    "pivotY": 94,
+    "radius": 46,
+    "x": 116,
+    "y": 179,
+    "src": "assets/props/coliving_bench.webp"
+   },
+   "weather_antenna": {
+    "w": 95,
+    "h": 139,
+    "pivotX": 48,
+    "pivotY": 133,
+    "radius": 32,
+    "x": 391,
+    "y": 0,
+    "src": "assets/props/weather_antenna.webp"
+   },
+   "relay_battery": {
+    "w": 57,
+    "h": 85,
+    "pivotX": 28,
+    "pivotY": 78,
+    "radius": 19,
+    "x": 638,
+    "y": 179,
+    "src": "assets/props/relay_battery.webp"
+   },
+   "boulder": {
+    "w": 153,
+    "h": 118,
+    "pivotX": 76,
+    "pivotY": 107,
+    "radius": 52,
+    "x": 756,
+    "y": 0,
+    "src": "assets/props/boulder.webp"
+   },
+   "shrub": {
+    "w": 103,
+    "h": 95,
+    "pivotX": 52,
+    "pivotY": 88,
+    "radius": 35,
+    "x": 360,
+    "y": 179,
+    "src": "assets/props/shrub.webp"
+   },
+   "slate_debris": {
+    "w": 114,
+    "h": 109,
+    "pivotX": 57,
+    "pivotY": 96,
+    "radius": 39,
+    "x": 0,
+    "y": 179,
+    "src": "assets/props/slate_debris.webp"
+   }
+  }
+ },
+ "fx": {
+  "image": "assets/sprites/fx.webp",
+  "rows": {
+   "slash": {
+    "w": 261,
+    "h": 213,
+    "count": 6
+   },
+   "splash": {
+    "w": 269,
+    "h": 279,
+    "count": 6
+   },
+   "dash": {
+    "w": 275,
+    "h": 257,
+    "count": 6
+   },
+   "impact": {
+    "w": 284,
+    "h": 224,
+    "count": 6
+   }
+  },
+  "frames": {
+   "splash_0": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 279
+   },
+   "splash_1": {
+    "x": 2,
+    "y": 0,
+    "w": 269,
+    "h": 279
+   },
+   "splash_2": {
+    "x": 273,
+    "y": 0,
+    "w": 269,
+    "h": 279
+   },
+   "splash_3": {
+    "x": 544,
+    "y": 0,
+    "w": 269,
+    "h": 279
+   },
+   "splash_4": {
+    "x": 0,
+    "y": 281,
+    "w": 269,
+    "h": 279
+   },
+   "splash_5": {
+    "x": 271,
+    "y": 281,
+    "w": 258,
+    "h": 279
+   },
+   "dash_0": {
+    "x": 531,
+    "y": 281,
+    "w": 275,
+    "h": 257
+   },
+   "dash_1": {
+    "x": 0,
+    "y": 562,
+    "w": 275,
+    "h": 257
+   },
+   "dash_2": {
+    "x": 277,
+    "y": 562,
+    "w": 275,
+    "h": 257
+   },
+   "dash_3": {
+    "x": 554,
+    "y": 562,
+    "w": 275,
+    "h": 257
+   },
+   "dash_4": {
+    "x": 0,
+    "y": 821,
+    "w": 275,
+    "h": 257
+   },
+   "dash_5": {
+    "x": 277,
+    "y": 821,
+    "w": 241,
+    "h": 257
+   },
+   "impact_0": {
+    "x": 520,
+    "y": 821,
+    "w": 0,
+    "h": 224
+   },
+   "impact_1": {
+    "x": 522,
+    "y": 821,
+    "w": 284,
+    "h": 224
+   },
+   "impact_2": {
+    "x": 0,
+    "y": 1080,
+    "w": 284,
+    "h": 224
+   },
+   "impact_3": {
+    "x": 286,
+    "y": 1080,
+    "w": 284,
+    "h": 224
+   },
+   "impact_4": {
+    "x": 572,
+    "y": 1080,
+    "w": 284,
+    "h": 224
+   },
+   "impact_5": {
+    "x": 0,
+    "y": 1306,
+    "w": 270,
+    "h": 224
+   },
+   "slash_0": {
+    "x": 272,
+    "y": 1306,
+    "w": 0,
+    "h": 213
+   },
+   "slash_1": {
+    "x": 274,
+    "y": 1306,
+    "w": 261,
+    "h": 213
+   },
+   "slash_2": {
+    "x": 537,
+    "y": 1306,
+    "w": 261,
+    "h": 213
+   },
+   "slash_3": {
+    "x": 0,
+    "y": 1532,
+    "w": 261,
+    "h": 213
+   },
+   "slash_4": {
+    "x": 263,
+    "y": 1532,
+    "w": 261,
+    "h": 213
+   },
+   "slash_5": {
+    "x": 526,
+    "y": 1532,
+    "w": 259,
+    "h": 213
+   }
+  }
+ },
+ "ui": {
+  "panel": {
+   "src": "assets/ui/panel.webp",
+   "w": 220,
+   "h": 130
+  },
+  "button_normal": {
+   "src": "assets/ui/button_normal.webp",
+   "w": 220,
+   "h": 96
+  },
+  "button_active": {
+   "src": "assets/ui/button_active.webp",
+   "w": 220,
+   "h": 106
+  },
+  "button_disabled": {
+   "src": "assets/ui/button_disabled.webp",
+   "w": 220,
+   "h": 98
+  },
+  "attack": {
+   "src": "assets/ui/attack.webp",
+   "w": 220,
+   "h": 219
+  },
+  "dash": {
+   "src": "assets/ui/dash.webp",
+   "w": 220,
+   "h": 212
+  },
+  "special": {
+   "src": "assets/ui/special.webp",
+   "w": 220,
+   "h": 225
+  },
+  "shield": {
+   "src": "assets/ui/shield.webp",
+   "w": 220,
+   "h": 217
+  },
+  "health_frame": {
+   "src": "assets/ui/health_frame.webp",
+   "w": 220,
+   "h": 61
+  },
+  "stamina_frame": {
+   "src": "assets/ui/stamina_frame.webp",
+   "w": 220,
+   "h": 58
+  },
+  "health_fill": {
+   "src": "assets/ui/health_fill.webp",
+   "w": 220,
+   "h": 41
+  },
+  "stamina_fill": {
+   "src": "assets/ui/stamina_fill.webp",
+   "w": 220,
+   "h": 42
+  },
+  "route_coin": {
+   "src": "assets/ui/route_coin.webp",
+   "w": 220,
+   "h": 228
+  },
+  "medkit": {
+   "src": "assets/ui/medkit.webp",
+   "w": 220,
+   "h": 223
+  },
+  "battery": {
+   "src": "assets/ui/battery.webp",
+   "w": 177,
+   "h": 285
+  },
+  "joystick": {
+   "src": "assets/ui/joystick.webp",
+   "w": 220,
+   "h": 218
+  }
+ },
+ "backgrounds": {
+  "desert": {
+   "src": "assets/arenas/desert.webp",
+   "thumb": "assets/arenas/desert_thumb.webp",
+   "size": 1254
+  },
+  "tidal": {
+   "src": "assets/arenas/tidal.webp",
+   "thumb": "assets/arenas/tidal_thumb.webp",
+   "size": 1254
+  },
+  "highland": {
+   "src": "assets/arenas/highland.webp",
+   "thumb": "assets/arenas/highland_thumb.webp",
+   "size": 1254
+  },
+  "title": {
+   "src": "assets/title.webp",
+   "small": "assets/title_960.webp",
+   "w": 1672,
+   "h": 941
+  }
+ }
+}

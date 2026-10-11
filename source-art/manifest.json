@@ -1,0 +1,2405 @@
+{
+  "title": "WAYFARER // RIFT",
+  "version": 1,
+  "coordinate_origin": "top_left",
+  "frame_bounds_status": "nominal_grid_requires_visual_cleanup",
+  "assets": [
+    {
+      "id": "01_sable_courier",
+      "file": "characters/01_sable_courier.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "sha256": "734040bd7a1581d1cb3501077f02aa17a7d8bd0b6263d8af2fb9f56851f3428d",
+      "alpha": {
+        "transparent_pixels": 326907,
+        "opaque_pixels": 122,
+        "partial_pixels": 1245499
+      },
+      "grid": {
+        "columns": 6,
+        "rows": 8
+      },
+      "frames": [
+        {
+          "id": "01_sable_courier__idle_south_0",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__idle_south_1",
+          "row": 0,
+          "column": 1,
+          "x": 181,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__idle_south_2",
+          "row": 0,
+          "column": 2,
+          "x": 362,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__idle_south_3",
+          "row": 0,
+          "column": 3,
+          "x": 543,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__idle_south_4",
+          "row": 0,
+          "column": 4,
+          "x": 724,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__idle_south_5",
+          "row": 0,
+          "column": 5,
+          "x": 905,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_0",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_1",
+          "row": 1,
+          "column": 1,
+          "x": 181,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_2",
+          "row": 1,
+          "column": 2,
+          "x": 362,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_3",
+          "row": 1,
+          "column": 3,
+          "x": 543,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_4",
+          "row": 1,
+          "column": 4,
+          "x": 724,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_south_5",
+          "row": 1,
+          "column": 5,
+          "x": 905,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_0",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_1",
+          "row": 2,
+          "column": 1,
+          "x": 181,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_2",
+          "row": 2,
+          "column": 2,
+          "x": 362,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_3",
+          "row": 2,
+          "column": 3,
+          "x": 543,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_4",
+          "row": 2,
+          "column": 4,
+          "x": 724,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_east_5",
+          "row": 2,
+          "column": 5,
+          "x": 905,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_0",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_1",
+          "row": 3,
+          "column": 1,
+          "x": 181,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_2",
+          "row": 3,
+          "column": 2,
+          "x": 362,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_3",
+          "row": 3,
+          "column": 3,
+          "x": 543,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_4",
+          "row": 3,
+          "column": 4,
+          "x": 724,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_north_5",
+          "row": 3,
+          "column": 5,
+          "x": 905,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_0",
+          "row": 4,
+          "column": 0,
+          "x": 0,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_1",
+          "row": 4,
+          "column": 1,
+          "x": 181,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_2",
+          "row": 4,
+          "column": 2,
+          "x": 362,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_3",
+          "row": 4,
+          "column": 3,
+          "x": 543,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_4",
+          "row": 4,
+          "column": 4,
+          "x": 724,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__walk_west_5",
+          "row": 4,
+          "column": 5,
+          "x": 905,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_0",
+          "row": 5,
+          "column": 0,
+          "x": 0,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_1",
+          "row": 5,
+          "column": 1,
+          "x": 181,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_2",
+          "row": 5,
+          "column": 2,
+          "x": 362,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_3",
+          "row": 5,
+          "column": 3,
+          "x": 543,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_4",
+          "row": 5,
+          "column": 4,
+          "x": 724,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__attack_south_5",
+          "row": 5,
+          "column": 5,
+          "x": 905,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_0",
+          "row": 6,
+          "column": 0,
+          "x": 0,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_1",
+          "row": 6,
+          "column": 1,
+          "x": 181,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_2",
+          "row": 6,
+          "column": 2,
+          "x": 362,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_3",
+          "row": 6,
+          "column": 3,
+          "x": 543,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_4",
+          "row": 6,
+          "column": 4,
+          "x": 724,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__special_south_5",
+          "row": 6,
+          "column": 5,
+          "x": 905,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__hurt_0",
+          "row": 7,
+          "column": 0,
+          "x": 0,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__hurt_1",
+          "row": 7,
+          "column": 1,
+          "x": 181,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__hurt_2",
+          "row": 7,
+          "column": 2,
+          "x": 362,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__defeat_0",
+          "row": 7,
+          "column": 3,
+          "x": 543,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__defeat_1",
+          "row": 7,
+          "column": 4,
+          "x": 724,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "01_sable_courier__defeat_2",
+          "row": 7,
+          "column": 5,
+          "x": 905,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        }
+      ]
+    },
+    {
+      "id": "02_rook_cartographer",
+      "file": "characters/02_rook_cartographer.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "sha256": "f7f309bf73e7cbb62eafff0e0894472e5fa7e5bfebc5e9c0c8a4c55a75e3f3e4",
+      "alpha": {
+        "transparent_pixels": 418205,
+        "opaque_pixels": 131,
+        "partial_pixels": 1154192
+      },
+      "grid": {
+        "columns": 6,
+        "rows": 8
+      },
+      "frames": [
+        {
+          "id": "02_rook_cartographer__idle_south_0",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__idle_south_1",
+          "row": 0,
+          "column": 1,
+          "x": 181,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__idle_south_2",
+          "row": 0,
+          "column": 2,
+          "x": 362,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__idle_south_3",
+          "row": 0,
+          "column": 3,
+          "x": 543,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__idle_south_4",
+          "row": 0,
+          "column": 4,
+          "x": 724,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__idle_south_5",
+          "row": 0,
+          "column": 5,
+          "x": 905,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_0",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_1",
+          "row": 1,
+          "column": 1,
+          "x": 181,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_2",
+          "row": 1,
+          "column": 2,
+          "x": 362,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_3",
+          "row": 1,
+          "column": 3,
+          "x": 543,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_4",
+          "row": 1,
+          "column": 4,
+          "x": 724,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_south_5",
+          "row": 1,
+          "column": 5,
+          "x": 905,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_0",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_1",
+          "row": 2,
+          "column": 1,
+          "x": 181,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_2",
+          "row": 2,
+          "column": 2,
+          "x": 362,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_3",
+          "row": 2,
+          "column": 3,
+          "x": 543,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_4",
+          "row": 2,
+          "column": 4,
+          "x": 724,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_east_5",
+          "row": 2,
+          "column": 5,
+          "x": 905,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_0",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_1",
+          "row": 3,
+          "column": 1,
+          "x": 181,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_2",
+          "row": 3,
+          "column": 2,
+          "x": 362,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_3",
+          "row": 3,
+          "column": 3,
+          "x": 543,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_4",
+          "row": 3,
+          "column": 4,
+          "x": 724,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_north_5",
+          "row": 3,
+          "column": 5,
+          "x": 905,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_0",
+          "row": 4,
+          "column": 0,
+          "x": 0,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_1",
+          "row": 4,
+          "column": 1,
+          "x": 181,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_2",
+          "row": 4,
+          "column": 2,
+          "x": 362,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_3",
+          "row": 4,
+          "column": 3,
+          "x": 543,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_4",
+          "row": 4,
+          "column": 4,
+          "x": 724,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__walk_west_5",
+          "row": 4,
+          "column": 5,
+          "x": 905,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_0",
+          "row": 5,
+          "column": 0,
+          "x": 0,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_1",
+          "row": 5,
+          "column": 1,
+          "x": 181,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_2",
+          "row": 5,
+          "column": 2,
+          "x": 362,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_3",
+          "row": 5,
+          "column": 3,
+          "x": 543,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_4",
+          "row": 5,
+          "column": 4,
+          "x": 724,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__attack_south_5",
+          "row": 5,
+          "column": 5,
+          "x": 905,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_0",
+          "row": 6,
+          "column": 0,
+          "x": 0,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_1",
+          "row": 6,
+          "column": 1,
+          "x": 181,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_2",
+          "row": 6,
+          "column": 2,
+          "x": 362,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_3",
+          "row": 6,
+          "column": 3,
+          "x": 543,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_4",
+          "row": 6,
+          "column": 4,
+          "x": 724,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__special_south_5",
+          "row": 6,
+          "column": 5,
+          "x": 905,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__hurt_0",
+          "row": 7,
+          "column": 0,
+          "x": 0,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__hurt_1",
+          "row": 7,
+          "column": 1,
+          "x": 181,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__hurt_2",
+          "row": 7,
+          "column": 2,
+          "x": 362,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__defeat_0",
+          "row": 7,
+          "column": 3,
+          "x": 543,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__defeat_1",
+          "row": 7,
+          "column": 4,
+          "x": 724,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "02_rook_cartographer__defeat_2",
+          "row": 7,
+          "column": 5,
+          "x": 905,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        }
+      ]
+    },
+    {
+      "id": "03_iona_tidekeeper",
+      "file": "characters/03_iona_tidekeeper.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "sha256": "759daa600ed34267b6b20cbee135652a060ad10fa9850353c95519d03ee270cb",
+      "alpha": {
+        "transparent_pixels": 417447,
+        "opaque_pixels": 105,
+        "partial_pixels": 1154976
+      },
+      "grid": {
+        "columns": 6,
+        "rows": 8
+      },
+      "frames": [
+        {
+          "id": "03_iona_tidekeeper__idle_south_0",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__idle_south_1",
+          "row": 0,
+          "column": 1,
+          "x": 181,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__idle_south_2",
+          "row": 0,
+          "column": 2,
+          "x": 362,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__idle_south_3",
+          "row": 0,
+          "column": 3,
+          "x": 543,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__idle_south_4",
+          "row": 0,
+          "column": 4,
+          "x": 724,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__idle_south_5",
+          "row": 0,
+          "column": 5,
+          "x": 905,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_0",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_1",
+          "row": 1,
+          "column": 1,
+          "x": 181,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_2",
+          "row": 1,
+          "column": 2,
+          "x": 362,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_3",
+          "row": 1,
+          "column": 3,
+          "x": 543,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_4",
+          "row": 1,
+          "column": 4,
+          "x": 724,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_south_5",
+          "row": 1,
+          "column": 5,
+          "x": 905,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_0",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_1",
+          "row": 2,
+          "column": 1,
+          "x": 181,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_2",
+          "row": 2,
+          "column": 2,
+          "x": 362,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_3",
+          "row": 2,
+          "column": 3,
+          "x": 543,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_4",
+          "row": 2,
+          "column": 4,
+          "x": 724,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_east_5",
+          "row": 2,
+          "column": 5,
+          "x": 905,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_0",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_1",
+          "row": 3,
+          "column": 1,
+          "x": 181,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_2",
+          "row": 3,
+          "column": 2,
+          "x": 362,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_3",
+          "row": 3,
+          "column": 3,
+          "x": 543,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_4",
+          "row": 3,
+          "column": 4,
+          "x": 724,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_north_5",
+          "row": 3,
+          "column": 5,
+          "x": 905,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_0",
+          "row": 4,
+          "column": 0,
+          "x": 0,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_1",
+          "row": 4,
+          "column": 1,
+          "x": 181,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_2",
+          "row": 4,
+          "column": 2,
+          "x": 362,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_3",
+          "row": 4,
+          "column": 3,
+          "x": 543,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_4",
+          "row": 4,
+          "column": 4,
+          "x": 724,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__walk_west_5",
+          "row": 4,
+          "column": 5,
+          "x": 905,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_0",
+          "row": 5,
+          "column": 0,
+          "x": 0,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_1",
+          "row": 5,
+          "column": 1,
+          "x": 181,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_2",
+          "row": 5,
+          "column": 2,
+          "x": 362,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_3",
+          "row": 5,
+          "column": 3,
+          "x": 543,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_4",
+          "row": 5,
+          "column": 4,
+          "x": 724,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__attack_south_5",
+          "row": 5,
+          "column": 5,
+          "x": 905,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_0",
+          "row": 6,
+          "column": 0,
+          "x": 0,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_1",
+          "row": 6,
+          "column": 1,
+          "x": 181,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_2",
+          "row": 6,
+          "column": 2,
+          "x": 362,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_3",
+          "row": 6,
+          "column": 3,
+          "x": 543,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_4",
+          "row": 6,
+          "column": 4,
+          "x": 724,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__special_south_5",
+          "row": 6,
+          "column": 5,
+          "x": 905,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__hurt_0",
+          "row": 7,
+          "column": 0,
+          "x": 0,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__hurt_1",
+          "row": 7,
+          "column": 1,
+          "x": 181,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__hurt_2",
+          "row": 7,
+          "column": 2,
+          "x": 362,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__defeat_0",
+          "row": 7,
+          "column": 3,
+          "x": 543,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__defeat_1",
+          "row": 7,
+          "column": 4,
+          "x": 724,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "03_iona_tidekeeper__defeat_2",
+          "row": 7,
+          "column": 5,
+          "x": 905,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        }
+      ]
+    },
+    {
+      "id": "04_gatewarden_boss",
+      "file": "characters/04_gatewarden_boss.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGBA",
+      "sha256": "51605c9b08a72f6e0fd3ebcb20a190f86dc404a4e8dff4979f5922f4709631ba",
+      "alpha": {
+        "transparent_pixels": 61860,
+        "opaque_pixels": 33,
+        "partial_pixels": 1510635
+      },
+      "grid": {
+        "columns": 6,
+        "rows": 8
+      },
+      "frames": [
+        {
+          "id": "04_gatewarden_boss__idle_south_0",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__idle_south_1",
+          "row": 0,
+          "column": 1,
+          "x": 181,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__idle_south_2",
+          "row": 0,
+          "column": 2,
+          "x": 362,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__idle_south_3",
+          "row": 0,
+          "column": 3,
+          "x": 543,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__idle_south_4",
+          "row": 0,
+          "column": 4,
+          "x": 724,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__idle_south_5",
+          "row": 0,
+          "column": 5,
+          "x": 905,
+          "y": 0,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_0",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_1",
+          "row": 1,
+          "column": 1,
+          "x": 181,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_2",
+          "row": 1,
+          "column": 2,
+          "x": 362,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_3",
+          "row": 1,
+          "column": 3,
+          "x": 543,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_4",
+          "row": 1,
+          "column": 4,
+          "x": 724,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_south_5",
+          "row": 1,
+          "column": 5,
+          "x": 905,
+          "y": 181,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_0",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_1",
+          "row": 2,
+          "column": 1,
+          "x": 181,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_2",
+          "row": 2,
+          "column": 2,
+          "x": 362,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_3",
+          "row": 2,
+          "column": 3,
+          "x": 543,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_4",
+          "row": 2,
+          "column": 4,
+          "x": 724,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_east_5",
+          "row": 2,
+          "column": 5,
+          "x": 905,
+          "y": 362,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_0",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_1",
+          "row": 3,
+          "column": 1,
+          "x": 181,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_2",
+          "row": 3,
+          "column": 2,
+          "x": 362,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_3",
+          "row": 3,
+          "column": 3,
+          "x": 543,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_4",
+          "row": 3,
+          "column": 4,
+          "x": 724,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_north_5",
+          "row": 3,
+          "column": 5,
+          "x": 905,
+          "y": 543,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_0",
+          "row": 4,
+          "column": 0,
+          "x": 0,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_1",
+          "row": 4,
+          "column": 1,
+          "x": 181,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_2",
+          "row": 4,
+          "column": 2,
+          "x": 362,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_3",
+          "row": 4,
+          "column": 3,
+          "x": 543,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_4",
+          "row": 4,
+          "column": 4,
+          "x": 724,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__walk_west_5",
+          "row": 4,
+          "column": 5,
+          "x": 905,
+          "y": 724,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_0",
+          "row": 5,
+          "column": 0,
+          "x": 0,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_1",
+          "row": 5,
+          "column": 1,
+          "x": 181,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_2",
+          "row": 5,
+          "column": 2,
+          "x": 362,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_3",
+          "row": 5,
+          "column": 3,
+          "x": 543,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_4",
+          "row": 5,
+          "column": 4,
+          "x": 724,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__attack_south_5",
+          "row": 5,
+          "column": 5,
+          "x": 905,
+          "y": 905,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_0",
+          "row": 6,
+          "column": 0,
+          "x": 0,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_1",
+          "row": 6,
+          "column": 1,
+          "x": 181,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_2",
+          "row": 6,
+          "column": 2,
+          "x": 362,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_3",
+          "row": 6,
+          "column": 3,
+          "x": 543,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_4",
+          "row": 6,
+          "column": 4,
+          "x": 724,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__special_south_5",
+          "row": 6,
+          "column": 5,
+          "x": 905,
+          "y": 1086,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__hurt_0",
+          "row": 7,
+          "column": 0,
+          "x": 0,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__hurt_1",
+          "row": 7,
+          "column": 1,
+          "x": 181,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__hurt_2",
+          "row": 7,
+          "column": 2,
+          "x": 362,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__defeat_0",
+          "row": 7,
+          "column": 3,
+          "x": 543,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__defeat_1",
+          "row": 7,
+          "column": 4,
+          "x": 724,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        },
+        {
+          "id": "04_gatewarden_boss__defeat_2",
+          "row": 7,
+          "column": 5,
+          "x": 905,
+          "y": 1267,
+          "width": 181,
+          "height": 181
+        }
+      ]
+    },
+    {
+      "id": "01_desert_relay",
+      "file": "arenas/01_desert_relay.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "3c3eb18c04681459fc896ca57128aa91f6d5e95b5efbbd7582fe79fc177eae56"
+    },
+    {
+      "id": "02_tidal_port",
+      "file": "arenas/02_tidal_port.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "259423e82eddc34ca401a0447017030e4672d856dc3de2495fcc93f3cb34567c"
+    },
+    {
+      "id": "03_highland_station",
+      "file": "arenas/03_highland_station.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "307f095e780f7e3d26db8c773e11f2a1c8d8dc5f9f925724ab0b19fa02b0cb26"
+    },
+    {
+      "id": "world_props_4x4",
+      "file": "props/world_props_4x4.png",
+      "width": 1293,
+      "height": 1217,
+      "mode": "RGBA",
+      "sha256": "d01f47acd6d764cb013d6ab800575e7cd97661f656b3350a9ab6d8f9cd7e0f14",
+      "alpha": {
+        "transparent_pixels": 731706,
+        "opaque_pixels": 458,
+        "partial_pixels": 841417
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 4
+      },
+      "frames": [
+        {
+          "id": "world_props_4x4__travel_chest",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__luggage",
+          "row": 0,
+          "column": 1,
+          "x": 323,
+          "y": 0,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__sandstone_barricade",
+          "row": 0,
+          "column": 2,
+          "x": 646,
+          "y": 0,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__supply_crate",
+          "row": 0,
+          "column": 3,
+          "x": 969,
+          "y": 0,
+          "width": 324,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__route_beacon",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 304,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__expedition_tent",
+          "row": 1,
+          "column": 1,
+          "x": 323,
+          "y": 304,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__harbor_bollard",
+          "row": 1,
+          "column": 2,
+          "x": 646,
+          "y": 304,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__barrel",
+          "row": 1,
+          "column": 3,
+          "x": 969,
+          "y": 304,
+          "width": 324,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__solar_charger",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 608,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__portal_arch",
+          "row": 2,
+          "column": 1,
+          "x": 323,
+          "y": 608,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__coliving_bench",
+          "row": 2,
+          "column": 2,
+          "x": 646,
+          "y": 608,
+          "width": 323,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__weather_antenna",
+          "row": 2,
+          "column": 3,
+          "x": 969,
+          "y": 608,
+          "width": 324,
+          "height": 304
+        },
+        {
+          "id": "world_props_4x4__relay_battery",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 912,
+          "width": 323,
+          "height": 305
+        },
+        {
+          "id": "world_props_4x4__boulder",
+          "row": 3,
+          "column": 1,
+          "x": 323,
+          "y": 912,
+          "width": 323,
+          "height": 305
+        },
+        {
+          "id": "world_props_4x4__shrub",
+          "row": 3,
+          "column": 2,
+          "x": 646,
+          "y": 912,
+          "width": 323,
+          "height": 305
+        },
+        {
+          "id": "world_props_4x4__slate_debris",
+          "row": 3,
+          "column": 3,
+          "x": 969,
+          "y": 912,
+          "width": 324,
+          "height": 305
+        }
+      ]
+    },
+    {
+      "id": "combat_fx_6x4",
+      "file": "effects/combat_fx_6x4.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "1199c703f1f32afc78a83b1af6a03e22b2944f42db575b4ae43ce37fb4009950",
+      "alpha": {
+        "transparent_pixels": 1044052,
+        "opaque_pixels": 0,
+        "partial_pixels": 528812
+      },
+      "grid": {
+        "columns": 6,
+        "rows": 4
+      },
+      "frames": [
+        {
+          "id": "combat_fx_6x4__slash_0",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__slash_1",
+          "row": 0,
+          "column": 1,
+          "x": 256,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__slash_2",
+          "row": 0,
+          "column": 2,
+          "x": 512,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__slash_3",
+          "row": 0,
+          "column": 3,
+          "x": 768,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__slash_4",
+          "row": 0,
+          "column": 4,
+          "x": 1024,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__slash_5",
+          "row": 0,
+          "column": 5,
+          "x": 1280,
+          "y": 0,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_0",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_1",
+          "row": 1,
+          "column": 1,
+          "x": 256,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_2",
+          "row": 1,
+          "column": 2,
+          "x": 512,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_3",
+          "row": 1,
+          "column": 3,
+          "x": 768,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_4",
+          "row": 1,
+          "column": 4,
+          "x": 1024,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__tide_pulse_5",
+          "row": 1,
+          "column": 5,
+          "x": 1280,
+          "y": 256,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_0",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_1",
+          "row": 2,
+          "column": 1,
+          "x": 256,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_2",
+          "row": 2,
+          "column": 2,
+          "x": 512,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_3",
+          "row": 2,
+          "column": 3,
+          "x": 768,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_4",
+          "row": 2,
+          "column": 4,
+          "x": 1024,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__compass_dash_5",
+          "row": 2,
+          "column": 5,
+          "x": 1280,
+          "y": 512,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_0",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_1",
+          "row": 3,
+          "column": 1,
+          "x": 256,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_2",
+          "row": 3,
+          "column": 2,
+          "x": 512,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_3",
+          "row": 3,
+          "column": 3,
+          "x": 768,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_4",
+          "row": 3,
+          "column": 4,
+          "x": 1024,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "id": "combat_fx_6x4__route_lock_5",
+          "row": 3,
+          "column": 5,
+          "x": 1280,
+          "y": 768,
+          "width": 256,
+          "height": 256
+        }
+      ]
+    },
+    {
+      "id": "interface_4x4",
+      "file": "ui/interface_4x4.png",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGBA",
+      "sha256": "0b844e546367a6645e0c991653bc734d66eb0f4c6b7ab4e1905f684d831afcd9",
+      "alpha": {
+        "transparent_pixels": 782373,
+        "opaque_pixels": 643,
+        "partial_pixels": 789512
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 4
+      },
+      "frames": [
+        {
+          "id": "interface_4x4__panel",
+          "row": 0,
+          "column": 0,
+          "x": 0,
+          "y": 0,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__button_normal",
+          "row": 0,
+          "column": 1,
+          "x": 362,
+          "y": 0,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__button_active",
+          "row": 0,
+          "column": 2,
+          "x": 724,
+          "y": 0,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__button_disabled",
+          "row": 0,
+          "column": 3,
+          "x": 1086,
+          "y": 0,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__attack",
+          "row": 1,
+          "column": 0,
+          "x": 0,
+          "y": 271,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__dash",
+          "row": 1,
+          "column": 1,
+          "x": 362,
+          "y": 271,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__special",
+          "row": 1,
+          "column": 2,
+          "x": 724,
+          "y": 271,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__shield",
+          "row": 1,
+          "column": 3,
+          "x": 1086,
+          "y": 271,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__health_frame",
+          "row": 2,
+          "column": 0,
+          "x": 0,
+          "y": 543,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__stamina_frame",
+          "row": 2,
+          "column": 1,
+          "x": 362,
+          "y": 543,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__health_fill",
+          "row": 2,
+          "column": 2,
+          "x": 724,
+          "y": 543,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__stamina_fill",
+          "row": 2,
+          "column": 3,
+          "x": 1086,
+          "y": 543,
+          "width": 362,
+          "height": 271
+        },
+        {
+          "id": "interface_4x4__route_coin",
+          "row": 3,
+          "column": 0,
+          "x": 0,
+          "y": 814,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__medkit",
+          "row": 3,
+          "column": 1,
+          "x": 362,
+          "y": 814,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__battery",
+          "row": 3,
+          "column": 2,
+          "x": 724,
+          "y": 814,
+          "width": 362,
+          "height": 272
+        },
+        {
+          "id": "interface_4x4__joystick",
+          "row": 3,
+          "column": 3,
+          "x": 1086,
+          "y": 814,
+          "width": 362,
+          "height": 272
+        }
+      ]
+    },
+    {
+      "id": "title_screen",
+      "file": "branding/title_screen.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "0a4734845e0e0b15aa91f20ce91822e4ac6e1bc88744896c7005a85e7c3aef83"
+    }
+  ]
+}

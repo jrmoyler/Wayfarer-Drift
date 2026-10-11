@@ -1,0 +1,61 @@
+{
+  "generator": "built-in image_gen",
+  "initial_prompts": [
+    {
+      "name": "characters/01_sable_courier.png",
+      "transparent": true,
+      "prompt": "Character animation atlas of Sable, athletic Black female expedition courier, sand scarf, dark ocean jacket, brown boots, compass disc weapon, teal accent. EXACT 6 columns x 8 rows equally sized cells, 48 sprites. Each row SAME character. Row1 six idle south frames; row2 six walk south frames; row3 six walk east frames; row4 six walk north frames; row5 six walk west frames; row6 six south slash attack frames anticipation swing contact followthrough recovery ready; row7 six compass dash special frames; row8 three hurt frames then three collapse defeat frames. Strong visibly changing sequential poses. Every sprite entirely inside cell with margin. Uniform scale, grounded feet at same baseline. No cell borders or text."
+    },
+    {
+      "name": "characters/02_rook_cartographer.png",
+      "transparent": true,
+      "prompt": "Character animation atlas of Rook, broad Southeast Asian male cartographer, earth brown coat, ocean blue trousers, surveying backpack, long folded brass survey staff, gold route accents. EXACT 6 columns x 8 rows equal cells 48 sprites. Row1 six idle south frames; row2 six walk south; row3 six walk east; row4 six walk north; row5 six walk west; row6 six south staff attack frames anticipation swing contact followthrough recovery ready; row7 six route beacon special frames; row8 three hurt then three collapse defeat frames. SAME character consistent costume and scale in every cell, strong sequential motion, feet same baseline. No borders no text."
+    },
+    {
+      "name": "characters/03_iona_tidekeeper.png",
+      "transparent": true,
+      "prompt": "Character animation atlas of Iona, brown skinned female harbor engineer, short curly hair, teal work vest, sand cargo pants, brass wrench, compact ocean blue backpack, water coil gauntlet. EXACT 6 columns x 8 rows equal cells 48 sprites. Row1 six idle south; row2 six walk south; row3 six walk east; row4 six walk north; row5 six walk west; row6 six south gauntlet strike anticipation contact followthrough recovery ready; row7 six tide pulse special frames; row8 three hurt then three collapse defeat frames. Same costume scale in every cell, readable animation changes, feet baseline consistent. No borders no text."
+    },
+    {
+      "name": "characters/04_gatewarden_boss.png",
+      "transparent": true,
+      "prompt": "Character animation atlas of Gatewarden, huge abandoned travel relay guardian automaton with weathered ocean black armor, tan ceramic panels, copper ring shoulders, compass shaped central amber eye, powerful staff. Distinct handmade mechanical details. EXACT 6 columns x 8 rows equally sized cells 48 sprites. Row1 six idle south; row2 six walk south; row3 six walk east; row4 six walk north; row5 six walk west; row6 six heavy south staff smash anticipation contact followthrough recovery ready; row7 six expanding route lock special; row8 three hurt then three crumple defeat frames. Identical design each frame consistent scale, full silhouette within every cell. No text no borders."
+    },
+    {
+      "name": "arenas/01_desert_relay.png",
+      "transparent": false,
+      "prompt": "Square playable overhead arena background, Desert Relay. Completely static ground and architectural border only; no characters, no interface, no loose foreground props. Orthographic overhead view looking straight down with shallow south-facing wall height for 2.5D depth. Large open walkable sandy stone plaza occupies central 75%, tasteful etched navigation rings, worn sandstone perimeter relay walls, northwest and southeast sheltered entrances, small copper cable channels, warm evening light from northwest. Outer decorative rocks and fabrics outside playable central area. Full bleed square game map, no perspective vanishing point, no text."
+    },
+    {
+      "name": "arenas/02_tidal_port.png",
+      "transparent": false,
+      "prompt": "Square playable overhead arena background, Tidal Port. Static floor and architectural border only, no people no UI no loose props. Orthographic overhead straight down, shallow south facing wall height 2.5D. Large open walkable blue gray stone harbor plaza central 75%, brass route inlays, perimeter seawall, dark turquoise water beyond north and west border, timber dock entrance east, broad south ramp. Floor dry and clear for combat, rich weathered stone detail, warm light northwest. Full bleed square map, no perspective vanishing point no text."
+    },
+    {
+      "name": "arenas/03_highland_station.png",
+      "transparent": false,
+      "prompt": "Square playable overhead arena background, Highland Station. Static ground and boundary architecture only, no characters no UI no loose props. Orthographic overhead looking straight down, shallow south wall height 2.5D. Large open walkable charcoal slate courtyard central 75%, worn compass paving, alpine moss edges, stone parapets around perimeter, distant cloud drop outside boundary, broad east west entry ramps, brass weather station architectural detailing at outer edges. Clear central combat zone. Warm northwest light, full bleed square game map, no perspective vanishing point no text."
+    },
+    {
+      "name": "props/world_props_4x4.png",
+      "transparent": true,
+      "prompt": "World prop atlas EXACT 4 columns x 4 rows, 16 distinct isolated objects, one object centered each equal cell, complete silhouettes generous margins. Reading row major: copper travel chest; stacked leather luggage; sandstone barricade; ocean blue supply crate; route beacon pedestal; folded expedition tent; harbor bollard; timber barrel; portable solar charger; compass portal arch; co-living bench; brass weather antenna; relay battery; mountain boulder; desert shrub; dark slate debris. Same orthographic overhead 2.5D game view, south surfaces visible, northwest light, transparent background, no labels no borders."
+    },
+    {
+      "name": "effects/combat_fx_6x4.png",
+      "transparent": true,
+      "prompt": "Combat VFX atlas EXACT 6 columns x 4 rows 24 equal cells. Row1 SIX sequential frames of sand gold sweeping melee slash crescent from small anticipation through broad impact to fading fragments. Row2 SIX sequential frames teal circular tide pulse expanding then dissolving. Row3 SIX sequential frames amber compass dash streak horizontal left to right, launch travel impact fade. Row4 SIX sequential frames copper route lock impact rune, flare expand crack dissipate. Effects only no characters. Each effect centered and completely contained in cell generous margins. Consistent stylized crisp hand painted game sprites, clear alpha transparency outside effect no background no labels no borders."
+    },
+    {
+      "name": "ui/interface_4x4.png",
+      "transparent": true,
+      "prompt": "Actual separated game UI assets atlas EXACT 4 columns x 4 rows equal cells, one complete centered isolated element per cell generous margins. Row major: wide empty dark ocean panel copper corner fittings; empty sand bordered button normal; empty copper bordered button active; empty dark disabled button; circular sand compass attack icon; circular teal dash icon; circular copper beacon special icon; circular gold shield icon; horizontal empty health bar frame; horizontal empty stamina bar frame; sand health fill strip; teal stamina fill strip; gold route coin pickup; teal medkit pickup; copper battery pickup; circular white directional joystick thumb with dark ocean ring. These are actual clean artwork cutouts for overlay not screenshot. No words letters numbers, no interface assembly, transparent background."
+    },
+    {
+      "name": "branding/title_screen.png",
+      "transparent": false,
+      "prompt": "Premium widescreen 16:9 title screen illustration for original top down 2.5D arena game. Exact only text title 'WAYFARER' with smaller 'RIFT' beneath, upper center, beautifully drawn readable sand serif lettering, copper navigation ornament. Four travelers: Black female courier sand scarf compass disc, broad Asian male cartographer with survey staff, curly haired brown skinned female harbor engineer teal vest, imposing weathered compass automaton. They stand at edge of ancient desert relay overlooking harbor and distant highland station, tangible hand painted illustrated game world, ocean black, sand, copper and teal, northwest warm light. Lower quarter clear dark ground to overlay menu buttons. No extra text no logos no particles."
+    }
+  ],
+  "fx_note": "Final FX regenerated with small separated solid effects and explicit alpha request; diffuse haze remains."
+}

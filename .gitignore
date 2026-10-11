@@ -1,0 +1,6 @@
+node_modules/
+dist/
+evidence/tmp/
+*.log
+.DS_Store
+evidence/*.png
