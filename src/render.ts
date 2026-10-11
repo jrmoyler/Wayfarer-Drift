@@ -2,8 +2,9 @@
  * Canvas 2D renderer. Reads simulation state, never writes it. Owns the
  * camera, screen shake, particles, floating text and every cosmetic effect.
  */
-import { animFrame, catalog, type CharSheet, type Images } from './assets';
+import { catalog, type CharSheet, type Images } from './assets';
 import type { RegionDef } from './data';
+import { poseOf } from './pose';
 import type { Fighter, Hazard, SimEvent, World } from './simulation';
 
 const ARENA = 1254;
@@ -558,39 +559,10 @@ export class Renderer {
     return { sheet, img };
   }
 
-  private poseOf(f: Fighter, world: World): { anim: string; frame: number; flip: boolean } {
-    const sheet = catalog.characters[f.cls];
-    const A = sheet.anims;
-    const flip = f.fx < -0.3;
-    const frac = f.dur > 0 ? Math.min(0.999, f.t / f.dur) : 0;
-    switch (f.state) {
-      case 'move':
-        return { anim: `walk_${f.dir}`, frame: animFrame(A[`walk_${f.dir}`], world.time + f.id * 0.13, f.cls === 'warden' ? 0.7 : 1), flip: false };
-      case 'dodge':
-        return { anim: `walk_${f.dir}`, frame: animFrame(A[`walk_${f.dir}`], f.t, 2.4), flip: false };
-      case 'attack':
-        return { anim: 'attack', frame: Math.min(5, 1 + Math.floor(frac * 5)), flip };
-      case 'windup':
-        if (f.cls === 'warden' && f.move !== 'sweep') return { anim: 'special', frame: frac < 0.5 ? 0 : 1, flip };
-        return { anim: 'attack', frame: frac < 0.55 ? 0 : 1, flip };
-      case 'special':
-        if (f.cls === 'warden') return { anim: f.move === 'slam' ? 'attack' : 'special', frame: Math.min(5, 2 + Math.floor(frac * 4)), flip };
-        return { anim: 'special', frame: Math.min(5, Math.floor(frac * 6)), flip };
-      case 'hurt':
-        return { anim: 'hurt', frame: Math.min(2, Math.floor(frac * 3)), flip };
-      case 'stagger':
-        return { anim: 'hurt', frame: 2, flip };
-      case 'dead':
-        return { anim: 'defeat', frame: Math.min(2, Math.floor(f.t / 0.22)), flip };
-      default:
-        return { anim: 'idle', frame: animFrame(A.idle, world.time + f.id * 0.31), flip: false };
-    }
-  }
-
   private drawFighter(f: Fighter, world: World): void {
     const ctx = this.ctx;
     const { sheet, img } = this.sheetFor(f);
-    const pose = this.poseOf(f, world);
+    const pose = poseOf(f, sheet, world.time);
     const a = sheet.anims[pose.anim];
     const sx = (a.start + pose.frame) * sheet.frameW;
     const sy = a.row * sheet.frameH;

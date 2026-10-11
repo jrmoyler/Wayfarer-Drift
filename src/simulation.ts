@@ -409,6 +409,7 @@ export class World {
         this.setState(p, 'dodge', DODGE_TIME);
         p.invuln = DODGE_IFRAMES;
         p.perfectUsed = false;
+        p.dir = dirOf(p.fx, p.fy);
         this.events.push({ type: 'dodge', x: p.x, y: p.y });
         return;
       } else if (this.buffer.dodge > 0.14) {
@@ -418,12 +419,13 @@ export class World {
 
     if (this.buffer.special > 0 && (canAct || inRecovery) && p.specialCd <= 0) {
       this.buffer.special = 0;
-      this.aimAtNearest(p, 320);
       if (mx || my) { const l = len(mx, my); p.fx = mx / l; p.fy = my / l; }
+      else this.aimAtNearest(p, 320);
       this.setState(p, 'special', p.cls === 'sable' ? 0.52 : 0.6);
       p.specialCd = p.specialCdMax;
       p.hitSet.clear();
       if (p.cls === 'sable') p.invuln = 0.42;
+      p.dir = dirOf(p.fx, p.fy);
       this.events.push({ type: 'special', cls: p.cls, x: p.x, y: p.y, fx: p.fx, fy: p.fy, team: 'player' });
       return;
     }
@@ -474,11 +476,13 @@ export class World {
         break;
       }
       case 'special':
-        this.updatePlayerSpecial(p);
+        this.updatePlayerSpecial(p, !!(mx || my));
         break;
       case 'hurt':
         p.vx = p.vy = 0;
-        if (p.t >= p.dur) this.setState(p, 'idle', 0);
+        // Can't move while staggered, but still turns toward the input.
+        if (mx || my) { const l = len(mx, my); p.fx = mx / l; p.fy = my / l; }
+        if (p.t >= p.dur) this.setState(p, mx || my ? 'move' : 'idle', 0);
         break;
       default:
         break;
@@ -487,11 +491,13 @@ export class World {
   }
 
   private beginAttack(p: Fighter, step: number, mx: number, my: number): void {
+    // A held direction always wins; aim assist only steers a neutral strike.
     if (mx || my) {
       const l = len(mx, my);
       p.fx = mx / l; p.fy = my / l;
+    } else {
+      this.aimAtNearest(p, p.reach + 130);
     }
-    this.aimAtNearest(p, p.reach + 130);
     p.comboStep = step;
     p.queued = false;
     p.hitSet.clear();
@@ -519,7 +525,7 @@ export class World {
     }
   }
 
-  private updatePlayerSpecial(p: Fighter): void {
+  private updatePlayerSpecial(p: Fighter, held: boolean): void {
     const fire = (at: number) => p.t >= at && p.t - STEP < at;
     p.vx = p.vy = 0;
     if (p.cls === 'sable') {
@@ -563,7 +569,7 @@ export class World {
         this.events.push({ type: 'hitstop', time: 0.06 });
       }
     }
-    if (p.t >= p.dur) this.setState(p, 'idle', 0);
+    if (p.t >= p.dur) this.setState(p, held ? 'move' : 'idle', 0);
   }
 
   private meleeHits(a: Fighter, mult: number, knock: number, finisher: boolean): void {
